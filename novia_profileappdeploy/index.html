@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IU Fanbase Web</title>
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="web.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Lee Ji-eun</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <aside>
+            <nav id="hamburger-nav">
+                <div class="logo">Lee Ji-eun</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toogleMenu()">
+                        <img src="./assets/kakaom-header-logo.png">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toogleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toogleMenu()">Projects</a></li>
+                    <li><a href="#photos" onclick="toogleMenu()">Photos</a></li>
+                    <li><a href="#contact" onclick="toogleMenu()">Contact</a></li>
+                </div>
+                </div>
+            </nav>
+        </aside>
+    </header>
+    
+    <main>
+    <article>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./assets/iu-edam.ent.png" alt="IU profile picture" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Welcome to</p>
+                <h1 class="title">IU</h1>
+                <p class="section_text_p2">un-official mini fan page</p>
+                <br>
+                <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="http://www.edam-ent.com/eng/sub03/sub03_0301_view"
+                    >
+                    Official Web
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"
+                    >
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                        <img 
+                        src="./assets/edam.png"
+                        alt="edam-ent" 
+                        class="icon" 
+                        onclick="location.href='https://edam.com/'"
+                        />
+                        <img 
+                        src="./assets/contact.png" 
+                        alt="contact-icon" 
+                        class="icon" 
+                        onclick="location.href='https://edam.com/'"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <p class="section_text_p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                        <div class="text-container">
+                            <p>
+                                Lee Ji-eun or commonly known as IU is a singer-songwriter, producer, model and actress from Korea. Her stage name comes from the words "I and You" which symbolizes that "we" can become "one" through music.</p>
+                            <p>
+                                The fan club's name is UAENA, where each syllable has a different meaning: "you" is English, "ae" is Sino-Korean for "love", and "na" is Korean for "me". IU made her debut at the age of 15 in 2008, under LOEN Entertainment (now Kakao M)
+                            </p>
+                            <br>
+                            Apart from her musical career, IU has also ventured into hosting radio and television shows, as well as acting. Following his supporting role in the teen drama Dream High
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <p class="section_text_p1">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <img
+                        src="./assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon"
+                        />
+                        <p><a href="edam@gmail.com">EDAM@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img
+                        src="./assets/instagram.png"
+                        alt="Instagram icon"
+                        class="icon contact-icon"
+                        />
+                        <p><a href="https://www.instagram.com/dlwlrma/">Instagram</a></p>
+                    </div>
+                </div>
+        </article>
+    </main>
+    </section>
+
+    <footer>
+        <article>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 KAKAO M. All Right Reserved.</p>
+            <p>disclaimer: this web for task purpose only</p>
+        </article> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
