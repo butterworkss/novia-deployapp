@@ -70,18 +70,18 @@ jobs:
       # NOTE: Alternative option - authentication via credentials json
       - name: Google Auth
         id: auth
-        uses: 'google-github-actions/auth@v0'
+        uses: 'google-github-actions/auth@v4'
         with:
           credentials_json: '${{ secrets.SA_CREDS }}'
 
       - name: Deploy to Cloud Run
         id: deploy
-        uses: google-github-actions/deploy-cloudrun@v0
+        uses: google-github-actions/deploy-cloudrun@v4
         with:
           service: ${{ env.SERVICE }}
           region: ${{ env.REGION }}
           # NOTE: If required, update to the appropriate source folder
-          source: ./novia-deployapp
+          source: ./novia_profileappdeploy
 
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
